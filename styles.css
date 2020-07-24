@@ -46,6 +46,10 @@ html, body {
     top: 0;
 }
 
+.navbar .navbar-item:last-child {
+    margin-top: auto;
+}
+
 .content {
     height: 100%;
     flex-grow: 1;
