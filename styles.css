@@ -18,6 +18,32 @@ html, body {
 
 .navbar {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-item {
+    writing-mode: tb-rl;
+    margin: 1em;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+.navbar-item::after {
+    content: '';
+    position: absolute;
+    right: 1.25em;
+    top: 50%;
+    width: 3px;
+    background: black;
+    transition: height 0.3s ease 0s, top 0.3s ease 0s;
+    height: 0;
+}
+
+.navbar-item:hover::after {
+    height: calc(100%);
+    top: 0;
 }
 
 .content {
