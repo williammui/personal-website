@@ -7,8 +7,8 @@
 html, body {
     height: 100%;
     width: 100%;
-    background: rgb(50, 50, 50);
-    color: white;
+    background: rgb(235, 235, 235);
+    color: black;
     font-family: 'Inter', sans-serif;
 }
 
@@ -18,9 +18,20 @@ html, body {
     position: relative;
 }
 
+section {
+    height: 100%;
+    position: relative;
+}
+
 #home {
     height: 100%;
     position: relative;
+}
+
+mark {
+    background: rgb(0,128,128, 1);
+    color: white;
+    padding: 0 0.1em;
 }
 
 .navbar {
@@ -80,11 +91,48 @@ button:hover {
 }
 
 .home-text {
+    width: 100%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    text-align: center;
 }
 
 .title {
-    font-size: 2.5em;
+    font-size: 4em;
 }
+
+.right {
+    text-align: right;
+}
+
+.links {
+    margin-top: 32px;
+}
+
+.link-logo {
+    margin-right: 24px;
+    width: 32px;
+    height: 32px;
+}
+
+.bg {
+    position: absolute;
+    z-index: 0;
+    display: block;
+    height: 100%; 
+    width: 100%;
+    overflow: hidden;
+}
+
+.content {
+    position:absolute;
+    z-index: 1;
+}
+
+.bg-text {
+    color:rgb(11, 11, 11);
+    font-size: 50em;
+}
+
+
