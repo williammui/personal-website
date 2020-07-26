@@ -7,52 +7,84 @@
 html, body {
     height: 100%;
     width: 100%;
-    font-family: sans-serif;
+    background: rgb(50, 50, 50);
+    color: white;
+    font-family: 'Inter', sans-serif;
 }
 
 .container {
     height: 100%;
-    display: flex;
-    overflow: hidden;
+    margin: 0 5%;
+    position: relative;
+}
+
+#home {
+    height: 100%;
+    position: relative;
 }
 
 .navbar {
-    height: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5% 0;
 }
 
-.navbar-item {
-    writing-mode: tb-rl;
-    margin: 1em;
+.logo {
+    cursor: pointer;
+}
+
+.navbar-links {
+    list-style: none;
+}
+
+.navbar-links li {
+    display: inline-block;
+    padding: 0 0.5em;
+}
+
+.navbar-links li a {
     text-decoration: none;
     color: inherit;
     position: relative;
 }
 
-.navbar-item::after {
+.navbar-links li a::after {
     content: '';
     position: absolute;
-    right: 1.25em;
+    left: 50%;
+    top: 1.25em;
+    height: 2px;
+    background: rgb(0,128,128);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.navbar-links li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+button {
+    padding: 0.5em 1em;
+    background: rgb(0,128,128,1);
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background: rgb(0,128,128,0.8);
+}
+
+.home-text {
+    position: absolute;
     top: 50%;
-    width: 3px;
-    background: black;
-    transition: height 0.3s ease 0s, top 0.3s ease 0s;
-    height: 0;
+    transform: translateY(-50%);
 }
 
-.navbar-item:hover::after {
-    height: calc(100%);
-    top: 0;
+.title {
+    font-size: 2.5em;
 }
-
-.navbar .navbar-item:last-child {
-    margin-top: auto;
-}
-
-.content {
-    height: 100%;
-    flex-grow: 1;
-    overflow: auto;
-}
-
