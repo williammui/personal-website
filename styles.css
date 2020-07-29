@@ -7,13 +7,21 @@
 html, body {
     height: 100%;
     width: 100%;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    background: rgb(235, 235, 235);
+    background:
+        linear-gradient(#ebebeb, rgb(235, 235, 235)) calc(1*100%/6),
+        linear-gradient(rgb(235, 235, 235), rgb(235, 235, 235)) calc(2*100%/6),
+        linear-gradient(rgb(235, 235, 235), rgb(235, 235, 235)) calc(3*100%/6),
+        linear-gradient(rgb(235, 235, 235), rgb(235, 235, 235)) calc(4*100%/6),
+        linear-gradient(rgb(235, 235, 235), rgb(235, 235, 235)) calc(5*100%/6);
+    background-size: 2px 100%; /* Control the width here*/
+    background-repeat: repeat-y;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
+mark {
+    background: rgb(4, 246, 153);
+    padding: 0 0.1em;
 }
 
 .topbar {
@@ -57,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
     right: 1.25em;
     top: 50%;
     width: 3px;
-    background: rgb(0,128,128);
+    background: rgb(4, 246, 153);
     transition: height 0.3s ease 0s, top 0.3s ease 0s;
     height: 0;
 }
@@ -89,21 +97,72 @@ h1, h2, h3, h4, h5, h6 {
 
 .content {
     height: 100%;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
 }
 
 .section {
     height: 100%;
-    width: 100%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
+}
+
+.fit {
+    height: fit-content;
+}
+
+.wide {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .intro {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 2em;
+    font-size: 3em;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.item {
+    margin-left: auto;
+    width: 85%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(5, 20%);
+}
+
+.left {
+    margin-left: 0;
+}
+
+.item-img {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    opacity: 0.9;
+}
+
+.classify {
+    background: url('images/header-img.JPG');
+}
+
+.item-title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    font-size: 8em;
+    z-index: 1;
 }
 
