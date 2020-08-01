@@ -148,6 +148,12 @@ mark {
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 5;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.item-img-right:hover {
+    opacity: 0.5;
 }
 
 .item-info-right {
@@ -168,8 +174,13 @@ mark {
 }
 
 .item-list-right {
-    border-left: 2px solid grey;
+    border-left: 1px solid rgb(135, 135, 135);
     padding-left: 0.5em;
+    padding-bottom: 2em;
+}
+
+.item-list-right p {
+    padding-bottom: 0.25em;
 }
 
 .item-text-right {
@@ -211,6 +222,12 @@ mark {
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 5;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.item-img-left:hover {
+    opacity: 0.5;
 }
 
 .item-info-left {
@@ -230,8 +247,13 @@ mark {
 }
 
 .item-list-left {
-    border-left: 2px solid grey;
+    border-left: 1px solid rgb(135, 135, 135);
     padding-left: 0.5em;
+    padding-bottom: 2em;
+}
+
+.item-list-left p {
+    padding-bottom: 0.25em;
 }
 
 .item-text-left {
@@ -278,4 +300,75 @@ mark {
     background-position: center;
     background-repeat: none;
 }
+
+.footer {
+    height: 25vh;
+    margin-right: auto;
+    width: 85%;
+    background: rgb(4, 246, 153);
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.message {
+    position: relative;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: 10%;
+}
+
+.info-1 {
+    position: relative;
+    height: 100%;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.info-2 {
+    position: relative;
+    height: 100%;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.info {
+    position: absolute;
+    margin-top: 15%;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer h2 {
+    font-size: 4em;
+    margin-bottom: 25px;
+}
+
+.footer h5 {
+    font-size: 1.25em;
+    margin-bottom: 25px;
+}
+
+.contact-list {
+    border-left: 0.25px solid black;
+    padding-left: 0.5em;
+    padding-bottom: 2em;
+}
+
+.contact-list > a {
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 0.25em;
+}
+
+.footer a {
+    padding-right: 0.5em;
+}
+
+
+
 
