@@ -24,9 +24,9 @@ mark {
 
 ul {
     list-style-type: none;
-    border-left: 1px solid rgb(135, 135, 135);
+    border-left: 1px solid black;
     padding-left: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 li {
@@ -37,6 +37,25 @@ li {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+button {
+    background: transparent;
+    font-size: 1.75rem;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5em 1em;
+    border: 1px solid black;
+    font-family: inherit;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    border-radius: 1em;
+    border: none
+}
+
+button:hover {
+    background: black;
+    color: white;
 }
 
 /* 
@@ -76,6 +95,10 @@ a {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.center-hor {
+    text-align: center;
 }
 
 .section-heading {
@@ -124,6 +147,21 @@ a {
     color: rgb(4, 246, 153);
 }
 
+.line-container {
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+}
+
+.line {
+    position: absolute;
+    border-left: 5px solid black;
+    height: 100%;
+    left: 50%;
+}
+
 @keyframes slideInFromRight {
     0% {
         transform: translateX(100%);
@@ -149,8 +187,22 @@ a {
 
 .topbar .resume:last-child {
     margin-left: auto;
-    text-decoration: none;
-    color: inherit;
+}
+
+.resume {
+    color: rgb(4, 246, 153);
+    background: black;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+}
+
+.resume span {
+    opacity: 0.8;
+    transition: all 0.3s ease 0s;
+}
+
+.resume span:hover {
+    opacity: 1;
 }
 
 /* 
@@ -232,21 +284,6 @@ a {
     display: inline-block;
     text-align: left;
     transform: translate(-33%, -50%);
-}
-
-/* 
- * ABOUT
-*/
-
-#about {
-    width: 100%;
-}
-
-.about-grid {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat();
 }
 
 /* 
@@ -354,10 +391,73 @@ a {
 }
 
 .blackberry {
-    background: url('../images/blackberry.png');
+    background: url('../assets/images/blackberry.png');
     background-size: cover;
     background-position: center;
     background-repeat: none;
+}
+
+/* 
+ * ABOUT
+*/
+
+#about {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+}
+
+.about-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, calc(100% / 3));
+    grid-template-rows: repeat(3, calc(100% / 3));
+}
+
+.about-title {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: relative;
+}
+
+.about-subtitle {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: relative;
+}
+
+.about-img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    position: relative;
+}
+
+.img-container {
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    margin-bottom: auto;
+    margin-top: auto;
+    background: url('../assets/images/about-img.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+}
+
+.about-subtitle {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: relative;
 }
 
 /* 
