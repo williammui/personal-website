@@ -10,6 +10,7 @@ html, body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 mark {
@@ -62,6 +63,11 @@ a {
 
 .title-text-margin {
     margin-bottom: 25px;
+}
+
+.parallax-img {
+    width: 100%;
+    height: 100%;
 }
 
 /* 
@@ -240,29 +246,8 @@ a {
     grid-column-end: 5;
 }
 
-.classify {
-    background: url('images/classify.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: none;
-}
-
 .blackberry {
-    background: url('images/blackberry.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: none;
-}
-
-.infor {
-    background: url('images/infor.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: none;
-}
-
-.deeptrekker {
-    background: url('images/deeptrekker.jpg');
+    background: url('../images/blackberry.png');
     background-size: cover;
     background-position: center;
     background-repeat: none;

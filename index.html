@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
     <link rel="icon" href="images/logo.ico">
     <title>William Mui</title>
 </head>
-<body id="smooth-scrollbar">
+<body>
     <!-- TOPBAR -->
     <div class="topbar">
         <h1 class="logo">W/M</h1>
@@ -40,7 +40,9 @@
                     <h4 class="subtitle"><mark>project</mark></h4>
                     <h3 class="title">Classify</h3>
                 </div>
-                <div class="item-img-right classify"></div>
+                <div class="item-img-right">
+                    <div class="parallax-window parallax-img" data-parallax="scroll" data-image-src="images/classify.jpg" data-speed="0.66"></div>
+                </div>
             </div>
             <div class="item-info">
                 <div class="item-details-right">
@@ -88,7 +90,9 @@
                     <h4 class="subtitle"><mark>internship</mark></h4>
                     <h3 class="title">Infor</h3>
                 </div>
-                <div class="item-img-right infor"></div>
+                <div class="item-img-right">
+                    <div class="parallax-window parallax-img" data-parallax="scroll" data-image-src="images/infor.jpg" data-speed="0.66"></div>
+                </div>
             </div>
             <div class="item-info">
                 <div class="item-details-right">
@@ -112,7 +116,9 @@
                     <h4 class="subtitle"><mark>internship</mark></h4>
                     <h3 class="title">Deep<br>Trekker</h3>
                 </div>
-                <div class="item-img-left deeptrekker"></div>
+                <div class="item-img-left">
+                    <div class="parallax-window parallax-img" data-parallax="scroll" data-image-src="images/deeptrekker.jpg" data-speed="0.66"></div>
+                </div>
             </div>
             <div class="item-info">
                 <div class="item-details-left">
@@ -135,7 +141,7 @@
     <div id="contact">
         <div class="message">
             <div class="center-vert">
-                <h2 class="title">Let's chat.</h2>
+                <h2 class="subtitle">Let's chat.</h2>
             </div>
         </div>
         <div class="contact-col-1">
@@ -155,5 +161,8 @@
             </div>
         </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="scripts/parallax.min.js"></script>
 </body>
 </html>
