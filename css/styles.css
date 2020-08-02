@@ -22,10 +22,6 @@ mark {
     padding: 0.1em;
 }
 
-span {
-    color: white;
-}
-
 ul {
     list-style-type: none;
     border-left: 1px solid rgb(135, 135, 135);
@@ -34,7 +30,7 @@ ul {
 }
 
 li {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     margin-bottom: 0.25em;
 }
 
@@ -120,12 +116,20 @@ a {
     height: 100%;
 }
 
+.span-white {
+    color: white;
+}
+
+.span-green {
+    color: rgb(4, 246, 153);
+}
+
 @keyframes slideInFromRight {
     0% {
-      transform: translateX(100%);
+        transform: translateX(100%);
     }
     100% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
 }
 
@@ -194,7 +198,8 @@ a {
 */
 
 #home {
-    height: 100%;
+    height: 100vh;
+    width: 100%;
 }
 
 .bg-container {
@@ -233,6 +238,10 @@ a {
  * ABOUT
 */
 
+#about {
+    width: 100%;
+}
+
 .about-grid {
     width: 100%;
     height: 100%;
@@ -243,6 +252,10 @@ a {
 /* 
  * WORK
 */
+
+#work {
+    width: 100%;
+}
 
 .item-right {
     margin-left: auto;
@@ -352,58 +365,40 @@ a {
 */
 
 #contact {
-    height: 25vh;
-    margin-right: auto;
-    width: 85%;
     background: rgb(4, 246, 153);
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
+    width: 85%;
+    margin-right: auto;
 }
 
-.message {
+.contact-flex {
+    width: 100%;
+    display: flex;
+}
+
+.contact-flex-1 {
+    width: 60%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+}
+
+.contact-flex-2 {
     position: relative;
-    height: 100%;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    margin-left: 10%;
+    flex-grow: 1;
 }
 
-.contact-col-1 {
+.contact-flex-3 {
     position: relative;
-    height: 100%;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    flex-grow: 1;
 }
 
-.contact-col-2 {
-    position: relative;
-    height: 100%;
-    grid-column-start: 4;
-    grid-column-end: 5;
-}
-
-.info-container {
+.contact-info {
     position: absolute;
-    margin-top: 15%;
+    margin-top: 25%;
 }
 
-.connect-icon {
+.social-icon {
     height: 24px;
     width: 24px;
     margin-right: 8px;
-}
-
-
-
-
-.panel {
-    min-height: 100vh;
-}
-
-.color-grey {
-    background: #101010;
-}
-
-.color-white {
-    background: white;
 }
