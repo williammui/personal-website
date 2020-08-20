@@ -4,192 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/images/favicon.ico">
     <title>William Mui</title>
 </head>
 <body>
-    <!-- TOPBAR -->
-    <div class="topbar">
-        <a href="#home"><h1 class="subtitle-med">W/M</h1></a>
-        <a href="assets/resume.pdf" target="_blank" class="resume"><span>RESUME</span></a>
-    </div>
+    <header class="header">
+        <a href="#home" class="logo"><h1 class="title-small semi-bold">W/M</h1></a>
+        <div class="navbar">
+            <a href="#work" class="navbar-item">work</a>
+            <a href="#about" class="navbar-item">about</a>
+            <a href="assets/resume.pdf" target="_blank" class="navbar-item">resume</a>
+        </div>
+    </header>
 
-    <!-- NAVBAR -->
-    <div class="navbar">
-        <a href="#work" class="navbar-item">WORK</a>
-        <a href="#about" class="navbar-item">ABOUT</a>
-        <a href="#contact" class="navbar-item">CONTACT</a>
-    </div>
+    <section id="home" class="home">
+        <div class="home-text">
+            <h1 class="intro title bold">I'm <span>William</span>, a full stack developer & student.</h1>
+            <h2 class="subtitle normal">Currently seeking Winter & Summer 2021 internships.</h2>
+        </div>
+    </section>
 
-    <!-- HOME -->
-    <div id="home">
-        <div class="bg-container">
-            <div class="bg-left">
-                <h1 class="section-heading center-vert name">Hi, I'm<br>William<span class="span-white">.</span></h1>
+    <section id="work" class="work">
+        <h3 class="work-heading subtitle-small semi-bold">work experience + projects</h3>
+        <div class="grid-row-work">
+            <div class="grid-item-work">
+                <a href="https://www.blackberry.com/us/en/products/blackberry-enterprise-identity" target="_blank">
+                    <div class="bg-blackberry">
+                        <div class="bg-hover">
+                            <div class="work-item-text">
+                                <h6 class="subtitle-small semi-bold"><mark>Summer 2020 Internship</mark></h6>
+                                <br>
+                                <h4 class="title-small bold">BLACKBERRY</h4>
+                                <h6 class="subtitle normal">Software Development Student</h6>
+                                <p class="work-item-info subtitle-small bold">Java | Express.js | Node.js | Cassandra</p>
+                                <p class="work-item-info text normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste cumque sed laborum distinctio consequatur? Alias dignissimos quis impedit vel modi, veritatis fuga soluta facilis repellat quod laboriosam, commodi, magni voluptatem.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="bg-right">
-                <div class="intro center-vert">
-                    <h2 class="subtitle-med">Full-stack developer & student.</h2>
-                    <h2 class="subtitle-med">Currently looking for<br><span class="span-white">Winter 2021</span> internships.</h2>
+            <div class="grid-item-work">
+                <a href="https://classify-spotify-app.herokuapp.com" target="_blank">
+                    <div class="bg-classify">
+                        <div class="bg-hover">
+                            <div class="work-item-text">
+                                <h6 class="subtitle-small semi-bold"><mark>Project</mark></h6>
+                                <br>
+                                <h4 class="title-small bold">CLASSIFY</h4>
+                                <h5 class="subtitle normal">Web App</h5>
+                                <p class="work-item-info subtitle-small bold">React.js | Express.js | Node.js | MongoDB<p>
+                                <p class="work-item-info text normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste cumque sed laborum distinctio consequatur? Alias dignissimos quis impedit vel modi, veritatis fuga soluta facilis repellat quod laboriosam, commodi, magni voluptatem.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="full-width-row">
+            <a href="https://www.infor.com/products/workforce-management" target="_blank">
+                <div class="bg-infor">
+                    <div class="bg-hover">
+                        <div class="work-item-text">
+                            <h5 class="subtitle-small semi-bold"><mark>Fall 2019 Internship</mark></h5>
+                            <br>
+                            <h4 class="title-small bold">INFOR GLOBAL SOLUTIONS</h4>
+                            <h5 class="subtitle normal">Software Developer</h5>
+                            <h5 class="work-item-info subtitle-small bold">Java | MySQL | Docker | Jenkins</h5>
+                            <p class="work-item-info text normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste cumque sed laborum distinctio consequatur? Alias dignissimos quis impedit vel modi, veritatis fuga soluta facilis repellat quod laboriosam, commodi, magni voluptatem.</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="grid-row-work">
+            <div class="grid-item-work">
+                <a href="https://www.deeptrekker.com/products/underwater-rov/dtg3" target="_blank">
+                    <div class="bg-deep-trekker">
+                        <div class="bg-hover">
+                            <div class="work-item-text">
+                                <h5 class="subtitle-small semi-bold"><mark>Winter 2019 Internship</mark></h5>
+                                <br>
+                                <h4 class="title-small bold">DEEP TREKKER</h4>
+                                <h5 class="subtitle normal">Full Stack Developer</h5>
+                                <h5 class="work-item-info subtitle-small bold">C++ | QML | Qt | Linux</h5>
+                                <p class="work-item-info text normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste cumque sed laborum distinctio consequatur? Alias dignissimos quis impedit vel modi, veritatis fuga soluta facilis repellat quod laboriosam, commodi, magni voluptatem.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-item-work">
+                <a href="https://www.agr.gc.ca/eng/agriculture-and-agri-food-canada" target="_blank">
+                    <div class="bg-aafc">
+                        <div class="bg-hover">
+                            <div class="work-item-text">
+                                <h5 class="subtitle-small semi-bold"><mark>Summer 2018 Internship</mark></h5>
+                                <br>
+                                <h4 class="title-small bold">AGRICULTURE AND<br>AGRI-FOOD CANADA</h4>
+                                <h5 class="subtitle normal">Web Analyst</h5>
+                                <h5 class="work-item-info subtitle-small bold">JavaScript | HTML | CSS | SharePoint</h5>
+                                <p class="work-item-info text normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste cumque sed laborum distinctio consequatur? Alias dignissimos quis impedit vel modi, veritatis fuga soluta facilis repellat quod laboriosam, commodi, magni voluptatem.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h3 class="about-heading subtitle-small semi-bold">about me</h3>
+        <div class="grid-row-about">
+            <div class="grid-item-about">
+                <h4 class="about-intro title semi-bold">I am a full stack developer and student.</h4>
+                <p class="about-text text normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, repellendus sunt incidunt deserunt minus voluptatem recusandae iste nihil vel laudantium esse eveniet, sequi nam, quis iusto officiis aut eligendi vitae?</p>
+            </div>
+            <div class="grid-item-about">
+                <div class="center-img">
+                    <div class="about-img">
+                        <img src="assets/images/about-img.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- WORK -->
-    <div id="work">
-        <div class="line-container">
-            <div class="line"></div>
-        </div>
-        <h2 class="section-heading center-hor">Work<span class="span-green">.</span></h2>
-        <h3 class="subtitle center-hor">My projects &<br>experience.</h3>
-        <div class="line-container">
-            <div class="line"></div>
-        </div>
-        <div class="item-right">
-            <div class="item-grid">
-                <div class="item-title-right">
-                    <h4 class="subtitle"><mark>project</mark></h4>
-                    <h3 class="title">Classify</h3>
-                </div>
-                <div class="item-img-right">
-                    <div class="parallax-window parallax-img" data-parallax="scroll" data-image-src="assets/images/classify.jpg" data-speed="0.66"></div>
-                </div>
-            </div>
-            <div class="item-info">
-                <div class="item-details-right">
-                    <h5 class="subtitle-small item-date">Summer 2020</h5>
-                    <ul>
-                        <li>React.js</li>
-                        <li>Node.js</li>
-                        <li>Express.js</li>
-                    </ul>
-                </div>
-                <div class="item-text-right">
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quo quis similique cum dolores molestiae veniam, 
-                        alias fugiat consectetur dolore placeat id nemo, voluptatem provident? Fuga eius dolor ipsam earum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, sit enim? Distinctio quibusdam illum officia itaque aut optio, ut error hic necessitatibus ipsa tenetur, doloribus cum voluptate maiores perspiciatis corrupti!</p>
-                </div>
+    <footer class="footer">
+        <div class="footer-text">
+            <h2 class="title-small semi-bold">Connect with me.</h2>
+            <h3 class="footer-msg subtitle-small normal">Feel free to reach out anyway, anytime.</h3>
+            <div class="social-links">
+                <a href="https://github.com/williammui" target="_blank" class="social">github</a>
+                <a href="https://linkedin.com/in/williammui8" target="_blank" class="social">linkedin</a>
             </div>
         </div>
+    </footer>
 
-        <div class="item-left">
-            <div class="item-grid">
-                <div class="item-title-left">
-                    <h4 class="subtitle"><mark>internship</mark></h4>
-                    <h3 class="title">BlackBerry</h3>
-                </div>
-                <div class="item-img-left blackberry" style="grid-column-end: 4;"></div>
-            </div>
-            <div class="item-info">
-                <div class="item-details-left">
-                    <h5 class="subtitle-small item-date">Summer 2020</h5>
-                    <ul>
-                        <li>Java</li>
-                        <li>Node.js</li>
-                        <li>Express.js</li>
-                    </ul>
-                </div>
-                <div class="item-text-left">
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quo quis similique cum dolores molestiae veniam, 
-                        alias fugiat consectetur dolore placeat id nemo, voluptatem provident? Fuga eius dolor ipsam earum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, sit enim? Distinctio quibusdam illum officia itaque aut optio, ut error hic necessitatibus ipsa tenetur, doloribus cum voluptate maiores perspiciatis corrupti!</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="item-right">
-            <div class="item-grid">
-                <div class="item-title-right">
-                    <h4 class="subtitle"><mark>internship</mark></h4>
-                    <h3 class="title">Infor</h3>
-                </div>
-                <div class="item-img-right">
-                    <div class="parallax-window parallax-img" data-parallax="scroll" data-image-src="assets/images/infor.jpg" data-speed="0.66"></div>
-                </div>
-            </div>
-            <div class="item-info">
-                <div class="item-details-right">
-                    <h5 class="subtitle-small item-date">Fall 2019</h5>
-                    <ul>
-                        <li>Java</li>
-                        <li>Docker</li>
-                        <li>Jenkins</li>
-                    </ul>
-                </div>
-                <div class="item-text-right">
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quo quis similique cum dolores molestiae veniam, 
-                        alias fugiat consectetur dolore placeat id nemo, voluptatem provident? Fuga eius dolor ipsam earum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, sit enim? Distinctio quibusdam illum officia itaque aut optio, ut error hic necessitatibus ipsa tenetur, doloribus cum voluptate maiores perspiciatis corrupti!</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="item-left">
-            <div class="item-grid">
-                <div class="item-title-left">
-                    <h4 class="subtitle"><mark>internship</mark></h4>
-                    <h3 class="title">Deep<br>Trekker</h3>
-                </div>
-                <div class="item-img-left">
-                    <div class="parallax-window parallax-img" data-parallax="scroll" data-image-src="assets/images/deeptrekker.jpg" data-speed="0.66"></div>
-                </div>
-            </div>
-            <div class="item-info">
-                <div class="item-details-left">
-                    <h5 class="subtitle-small item-date">Winter 2019</h5>
-                    <ul>
-                        <li>C++</li>
-                        <li>QML</li>
-                        <li>Qt</li>
-                    </ul>
-                </div>
-                <div class="item-text-left">
-                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quo quis similique cum dolores molestiae veniam, 
-                        alias fugiat consectetur dolore placeat id nemo, voluptatem provident? Fuga eius dolor ipsam earum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, sit enim? Distinctio quibusdam illum officia itaque aut optio, ut error hic necessitatibus ipsa tenetur, doloribus cum voluptate maiores perspiciatis corrupti!</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ABOUT -->
-    <div id="about">
-        <div class="about-grid">
-            <div class="about-title">
-                <h2 class="section-heading center-vert">About<br>me<span class="span-green">.</span></h2>
-            </div>
-            <div class="about-subtitle">
-                <h3 class="subtitle center-vert">My projects &<br>work experience.</h3>
-            </div>
-            <div class="about-img">
-                <div class="img-container"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- CONTACT -->
-    <div id="contact">
-        <div class="contact-flex">
-            <h2 class="contact-flex-1 section-heading">Let's chat<span class="span-white">.</span></h2>
-            <div class="contact-flex-2">
-                <div class="contact-info">
-                    <h5 class="subtitle-small title-text-margin">Contact</h5>
-                    <ul>
-                        <li style="font-size: 2rem;"><a href="mailto:wkkmui@uwaterloo.ca">wkkmui@uwaterloo.ca</a></li>
-                        <li style="font-size: 2rem;">(613) 808-2691</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="contact-flex-3">
-                <div class="contact-info">
-                    <h5 class="subtitle-small title-text-margin">Connect</h5>
-                    <a href="https://github.com/williammui" target="_blank"><img src="assets/images/github-logo.png" alt="GitHub" class="social-icon"></a>
-                    <a href="https://linkedin.com/in/williammui8" target="_blank"><img src="assets/images/linkedin-logo.png" alt="LinkedIn" class="social-icon"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="scripts/parallax.min.js"></script>
+    <script src="scripts/app.js"></script>
 </body>
 </html>
