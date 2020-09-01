@@ -65,7 +65,7 @@ a {
 }
 
 .loader > img {
-    width: 100px;
+    width: 50px;
 }
 
 .loader.hidden {
