@@ -51,7 +51,7 @@ a {
  * LOADER
 */
 
-.loader {
+#loader {
     position: fixed;
     z-index: 99;
     top: 0;
@@ -62,9 +62,10 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 1s ease 0s;
 }
 
-.loader > img {
+#loader > img {
     width: 50px;
 }
 
