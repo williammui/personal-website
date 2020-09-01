@@ -4,57 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/images/favicon.ico">
     <title>William Mui</title>
 </head>
 <body>
     <header class="header">
-        <a href="#home" class="logo"><h1 class="title-small semi-bold">W/M</h1></a>
+        <a href="#home" class="logo"><h1 class="logo">W/M</h1></a>
         <div class="navbar">
-            <a href="#work" class="navbar-item">work</a>
-            <a href="#about" class="navbar-item">about</a>
+            <a href="#work" class="navbar-item navbar-link">work</a>
+            <a href="#about" class="navbar-item navbar-link">about</a>
             <a href="assets/resume.pdf" target="_blank" class="navbar-item">resume</a>
         </div>
     </header>
 
     <section id="home" class="home">
         <div class="home-text">
-            <h1 class="intro title bold">I'm <span>William</span>, a full stack developer & student.</h1>
-            <h2 class="subtitle normal">Currently seeking Winter & Summer 2021 internships.</h2>
+            <h1 class="home-intro">I'm <span>William</span>, a full stack developer & student.</h1>
+            <h2 class="text">Currently seeking Winter & Summer 2021 internships.</h2>
         </div>
     </section>
 
     <section id="work" class="work">
-        <h3 class="work-heading subtitle-small semi-bold">work experience + projects</h3>
+        <h3 class="work-heading">work experience + projects</h3>
         <div class="grid-row-work">
             <div class="grid-item-work">
                 <a href="https://www.blackberry.com/us/en/products/blackberry-enterprise-identity" target="_blank">
                     <div class="bg-blackberry">
                         <div class="bg-hover">
                             <div class="work-item-text">
-                                <h6 class="subtitle-small semi-bold"><mark>Summer 2020 Internship</mark></h6>
-                                <br>
-                                <h4 class="title-small bold">BLACKBERRY</h4>
-                                <h6 class="subtitle normal">Software Development Student</h6>
-                                <p class="work-item-info subtitle-small bold">Java | Express.js | Node.js | Cassandra</p>
-                                <p class="work-item-info text normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste cumque sed laborum distinctio consequatur? Alias dignissimos quis impedit vel modi, veritatis fuga soluta facilis repellat quod laboriosam, commodi, magni voluptatem.</p>
+                                <h6 class="work-item-category"><mark>Summer 2020 Internship</mark></h6>
+                                <h4 class="work-item-name">BLACKBERRY</h4>
+                                <h5 class="work-item-position">Software Development Student</h5>
+                                <p class="work-item-highlights">Java • Express.js • Node.js • Cassandra</p>
+                                <p class="text">
+                                    During my fourth internship as part of the Enterprise Identity Team, I spearheaded the design, implementation and testing of an OpenID Connect client SDK, a comprehensive library to help with RP and IDP communication. My focus was also to deliver extensive documentation for the SDK, along with performing demos to external BlackBerry teams.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="grid-item-work">
-                <a href="https://classify-spotify-app.herokuapp.com" target="_blank">
+                <a href="https://github.com/williammui/spotify-app" target="_blank">
                     <div class="bg-classify">
                         <div class="bg-hover">
                             <div class="work-item-text">
-                                <h6 class="subtitle-small semi-bold"><mark>Project</mark></h6>
-                                <br>
-                                <h4 class="title-small bold">CLASSIFY</h4>
-                                <h5 class="subtitle normal">Web App</h5>
-                                <p class="work-item-info subtitle-small bold">React.js | Express.js | Node.js | MongoDB<p>
-                                <p class="work-item-info text normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste cumque sed laborum distinctio consequatur? Alias dignissimos quis impedit vel modi, veritatis fuga soluta facilis repellat quod laboriosam, commodi, magni voluptatem.</p>
+                                <h6 class="work-item-category"><mark>Project</mark></h6>
+                                <h4 class="work-item-name">CLASSIFY</h4>
+                                <h5 class="work-item-position">Web App</h5>
+                                <p class="work-item-highlights">React.js • Express.js • Node.js • MongoDB<p>
+                                <p class="text">
+                                    Classify is a web based app which helps Spotify users organize their Liked Songs by genre. As a MERN stack application, Classify uses a React.js frontend, a Node.js + Express.js backend server, and a MongoDB database running on AWS.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -66,12 +68,13 @@
                 <div class="bg-infor">
                     <div class="bg-hover">
                         <div class="work-item-text">
-                            <h5 class="subtitle-small semi-bold"><mark>Fall 2019 Internship</mark></h5>
-                            <br>
-                            <h4 class="title-small bold">INFOR GLOBAL SOLUTIONS</h4>
-                            <h5 class="subtitle normal">Software Developer</h5>
-                            <h5 class="work-item-info subtitle-small bold">Java | MySQL | Docker | Jenkins</h5>
-                            <p class="work-item-info text normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste cumque sed laborum distinctio consequatur? Alias dignissimos quis impedit vel modi, veritatis fuga soluta facilis repellat quod laboriosam, commodi, magni voluptatem.</p>
+                            <h6 class="work-item-category"><mark>Fall 2019 Internship</mark></h6>
+                            <h4 class="work-item-name">INFOR</h4>
+                            <h5 class="work-item-position">Software Developer</h5>
+                            <p class="work-item-highlights">Java • Docker • Jenkins • WebLogic</p>
+                            <p class="text">
+                                During my 4 months at Infor, I worked as part of the Workforce Management Team, delivering a WebLogic Docker container to conveniently host the web application for developers. I was also responsible writing comprehensive tests for new features and implementing new logging tools to assist the debugging process.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -83,12 +86,13 @@
                     <div class="bg-deep-trekker">
                         <div class="bg-hover">
                             <div class="work-item-text">
-                                <h5 class="subtitle-small semi-bold"><mark>Winter 2019 Internship</mark></h5>
-                                <br>
-                                <h4 class="title-small bold">DEEP TREKKER</h4>
-                                <h5 class="subtitle normal">Full Stack Developer</h5>
-                                <h5 class="work-item-info subtitle-small bold">C++ | QML | Qt | Linux</h5>
-                                <p class="work-item-info text normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste cumque sed laborum distinctio consequatur? Alias dignissimos quis impedit vel modi, veritatis fuga soluta facilis repellat quod laboriosam, commodi, magni voluptatem.</p>
+                                <h6 class="work-item-category"><mark>Winter 2019 Internship</mark></h6>
+                                <h4 class="work-item-name">DEEP TREKKER</h4>
+                                <h5 class="work-item-position">Full Stack Developer</h5>
+                                <p class="work-item-highlights">C++ • QML • Qt • Linux</p>
+                                <p class="text">
+                                    I had the privilege during my second internship of working on the DTG3 product release, collaborating with talented embedded and full stack developers on the ROV's controller software. My focus was implementing controller features, introducing a modular frontend, as well as integrating third-party hardware.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -99,12 +103,13 @@
                     <div class="bg-aafc">
                         <div class="bg-hover">
                             <div class="work-item-text">
-                                <h5 class="subtitle-small semi-bold"><mark>Summer 2018 Internship</mark></h5>
-                                <br>
-                                <h4 class="title-small bold">AGRICULTURE AND<br>AGRI-FOOD CANADA</h4>
-                                <h5 class="subtitle normal">Web Analyst</h5>
-                                <h5 class="work-item-info subtitle-small bold">JavaScript | HTML | CSS | SharePoint</h5>
-                                <p class="work-item-info text normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste cumque sed laborum distinctio consequatur? Alias dignissimos quis impedit vel modi, veritatis fuga soluta facilis repellat quod laboriosam, commodi, magni voluptatem.</p>
+                                <h6 class="work-item-category"><mark>Summer 2018 Internship</mark></h6>
+                                <h4 class="work-item-name">AAFC</h4>
+                                <h5 class="work-item-position">Web Analyst</h5>
+                                <p class="work-item-highlights">JavaScript • HTML • CSS • SharePoint</p>
+                                <p class="text">
+                                    I was an integral part of a organization-wide charity team leading the overhaul and redesign of the campaign's SharePoint website. My responsibilities included implementing a new responsive design with interactive elements, as well as leading demos of the site to various teams across AAFC.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -114,16 +119,28 @@
     </section>
 
     <section id="about" class="about">
-        <h3 class="about-heading subtitle-small semi-bold">about me</h3>
         <div class="grid-row-about">
-            <div class="grid-item-about">
-                <h4 class="about-intro title semi-bold">I am a full stack developer and student.</h4>
-                <p class="about-text text normal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, repellendus sunt incidunt deserunt minus voluptatem recusandae iste nihil vel laudantium esse eveniet, sequi nam, quis iusto officiis aut eligendi vitae?</p>
+            <div class="grid-item-text">
+                <div class="about-content">
+                    <h4 class="about-intro">About me.</h4>
+                    <p class="about-text">
+                        In Fall 2017, as a freshman at the University of Waterloo, I took my first ever CS class.
+                        Ever since then, my passion for software development has driven me to never stop learning and building cool things.
+                        <br><br>
+                        As a third year Mechatronics Engineering student, I have completed 4 SWE internships, working and absorbing as much as I can from some brilliant mentors.
+                        I hope to continue this journey and work with amazing people in future internships and full-time work!
+                        <br><br>
+                        Away from the computer, I love exploring nature, vibing to some music at a summer festival, or keeping up with the NBA.
+                        <br><br>
+                    </p>
+                    <p class="contact-info"><span>(613) 808-2691</span></p>
+                    <a href="mailto:wkkmui@uwaterloo.ca" class="contact-info"><span>wkkmui@uwaterloo.ca</span></a>
+                </div>
             </div>
-            <div class="grid-item-about">
+            <div class="grid-item-img">
                 <div class="center-img">
                     <div class="about-img">
-                        <img src="assets/images/about-img.png" alt="">
+                        <img src="assets/images/about.png" alt="about">
                     </div>
                 </div>
             </div>
@@ -131,14 +148,10 @@
     </section>
 
     <footer class="footer">
-        <div class="footer-text">
-            <h2 class="title-small semi-bold">Connect with me.</h2>
-            <h3 class="footer-msg subtitle-small normal">Feel free to reach out anyway, anytime.</h3>
-            <div class="social-links">
-                <a href="https://github.com/williammui" target="_blank" class="social">github</a>
-                <a href="https://linkedin.com/in/williammui8" target="_blank" class="social">linkedin</a>
-            </div>
-        </div>
+        <a href="https://github.com/williammui" target="_blank" class="social"><img src="assets/images/github.png" alt="github"></a>
+        <a href="https://linkedin.com/in/williammui8" target="_blank" class="social"><img src="assets/images/linkedin.png" alt="linkedin"></a>
+        <br><br>
+        <p class="text">Built by William Mui</p>
     </footer>
 
     <script src="scripts/app.js"></script>
