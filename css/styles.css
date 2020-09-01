@@ -65,7 +65,7 @@ a {
 }
 
 .loader > img {
-    width: 50px;
+    width: 5vw;
 }
 
 .loader.hidden {
@@ -73,7 +73,7 @@ a {
     animation-fill-mode: forwards;
 }
 
-@keyframes fadeOut {
+@-webkit-keyframes fadeOut {
     100% {
         opacity: 0;
         visibility: hidden;
