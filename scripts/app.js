@@ -1,11 +1,13 @@
 // SELECTORS
 const loader = document.querySelector('.loader');
+const loaderImg = document.querySelector('.loader-img');
 const header = document.querySelector('.header');
 const navbarItems = document.querySelectorAll('.navbar-link');
 
 // EVENT LISTENERS
 window.addEventListener('load', function () {
     loader.classList.add('hidden');
+    loaderImg.classList.add('hidden-img');
 });
 
 window.addEventListener('scroll', function() {
