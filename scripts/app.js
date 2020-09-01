@@ -3,6 +3,11 @@ const header = document.querySelector('.header');
 const navbarItems = document.querySelectorAll('.navbar-link');
 
 // EVENT LISTENERS
+window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden";
+});
+
 window.addEventListener('scroll', function() {
     const top = window.scrollY;
     if (top > 0) {
