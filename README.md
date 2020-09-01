@@ -1,2 +1,2 @@
 # Personal Website
-Personal website for William Mui found [here.](williammui.com)
+Personal website for William Mui found [here.](https://williammui.com)
