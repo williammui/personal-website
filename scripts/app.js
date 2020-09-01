@@ -5,6 +5,7 @@ const navbarItems = document.querySelectorAll('.navbar-link');
 // EVENT LISTENERS
 window.addEventListener('load', function () {
     document.getElementById('loader').style.opacity = 0;
+    document.getElementById('loader').style.visibility = 'hidden';
 });
 
 window.addEventListener('scroll', function() {
