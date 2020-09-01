@@ -67,20 +67,13 @@ a {
     transition: all 1s ease 0s;
 }
 
-.loader-img {
+.loader img {
     width: 50px;
-    transition: all 1s ease 0s;
 }
 
 .hidden {
     opacity: 0;
     visibility: hidden;
-}
-
-.hidden-img {
-    opacity: 0;
-    visibility: hidden;
-    width: 0px;
 }
 
 /*
