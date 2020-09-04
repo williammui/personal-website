@@ -1,6 +1,7 @@
 // SELECTORS
 const loader = document.querySelector('.loader');
 const header = document.querySelector('.header');
+const logo = document.querySelector('.logo');
 const navbarItems = document.querySelectorAll('.navbar-link');
 
 // EVENT LISTENERS
@@ -15,6 +16,16 @@ window.addEventListener('scroll', function() {
     } else {
         header.classList.remove('active');
     }
+});
+
+logo.addEventListener('click', function(e) {
+    e.preventDefault();
+    const id = e.currentTarget.getAttribute('href').slice(1);
+    const element = document.getElementById(id);
+    window.scrollTo({
+        left: 0,
+        top: element.offsetTop
+    });
 });
 
 navbarItems.forEach(function (link) {
