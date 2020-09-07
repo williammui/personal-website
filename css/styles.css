@@ -187,10 +187,19 @@ a {
 }
 
 .home-text {
-    width: 45%;
+    width: 35%;
     margin-left: 10vw;
     padding-top: 12.5em;
     padding-bottom: 10em;
+}
+
+@media only screen and (max-width: 1585px) {
+    .home-text {
+        width: 50%;
+        margin-left: 10vw;
+        padding-top: 12.5em;
+        padding-bottom: 10em;
+    }
 }
 
 @media only screen and (max-width: 915px) {
